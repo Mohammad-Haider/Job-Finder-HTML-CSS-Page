@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="first_page.css" />
+    <title>My First HTML Application</title>
+    <style>
+      p {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="headingContainer">Welcome to Job Finder</h2>
+    <div class="imageContainer">
+      <img
+        src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTQyMDU0OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+        alt="Image is still loading......."
+      />
+    </div>
+
+    <br />
+    <br />
+    <h2 class="headingContainer">About Us</h2>
+
+    <details>
+      <p style="background-color: yellowgreen">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio
+        dolor laborum, natus expedita ratione dolores impedit quod quaerat
+        tempora fugiat blanditiis, aliquid corrupti sapiente at, veniam
+        repellendus ut deserunt. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ipsa optio dolor laborum, natus expedita ratione
+        dolores impedit quod quaerat tempora fugiat blanditiis, aliquid corrupti
+        sapiente at, veniam repellendus ut deserunt. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ipsa optio dolor laborum, natus expedita
+        ratione dolores impedit quod quaerat tempora fugiat blanditiis, aliquid
+        corrupti sapiente at, veniam repellendus ut deserunt. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Ipsa optio dolor laborum, natus
+        expedita ratione dolores impedit quod quaerat tempora fugiat blanditiis,
+        aliquid corrupti sapiente at, veniam repellendus ut deserunt. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio dolor
+        laborum, natus expedita ratione dolores impedit quod quaerat tempora
+        fugiat blanditiis, aliquid corrupti sapiente at, veniam repellendus ut
+        deserunt.
+      </p>
+    </details>
+    <h2 class="headingContainer">
+      <strong>You can apply in the following fields:</strong>
+    </h2>
+    <ol type="1">
+      <li>Web Development</li>
+      <li>Android Development</li>
+      <li>Dev Ops</li>
+      <li>AI/ML</li>
+    </ol>
+    <br />
+    <br />
+    <div class="formContainer">
+      <h2>Please enter the following details:</h2>
+      <form action="https://www.linkedin.com" target="_blank">
+        <label for="fname">
+          First Name:
+          <div>
+            <input type="text" name="myFirstName" id="fname" />
+          </div>
+        </label>
+        <br />
+        <label for="lname">
+          Last Name:
+          <div>
+            <input type="text" name="myLastName" id="lname" />
+          </div>
+        </label>
+        <br />
+        <label for="employment">
+          Are you currently employed?
+          <div>
+            <input type="radio" name="yes" id="employment" />Yes
+            <input type="radio" name="yes" id="employment" />No
+          </div>
+        </label>
+        <br />
+        <label for="experience">
+          How many years of experience?
+          <div>
+            <select name="myExperience" id="experience">
+              <option value="null">------------</option>
+              <option value="zero">0</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5+</option>
+            </select>
+          </div>
+        </label>
+        <br />
+        <label for="beacholars">
+          Select your discipline for BS:
+          <div>
+            <select name="myDegree" id="beacholars">
+              <option value="null">------------</option>
+              <option value="cs">Computer Science</option>
+              <option value="se">Software Engineering</option>
+              <option value="it">Information Technology</option>
+              <option value="ai">Artificial Intelligence</option>
+              <option value="ds">Data Science</option>
+              <option value="ee">Electrical Engineering</option>
+            </select>
+          </div>
+        </label>
+        <br />
+        <label for="personal_statement">
+          Write about yourself in 500 characters or less:
+          <div>
+            <textarea
+              name="my_personal_statement"
+              id="personal_statement"
+              cols="30"
+              rows="10"
+            >
+Please write your text here...</textarea
+            >
+          </div>
+        </label>
+        <br />
+        <label for="salary">
+          Salary:
+          <div>
+            <input
+              type="number"
+              name="mySalary"
+              id="salary"
+              min="60000"
+              max="100000"
+            />
+          </div>
+        </label>
+        <br />
+        <label for="resume">
+          Upload your CV/Resume:
+          <div>
+            <input type="file" id="resume" name="filename" />
+          </div>
+        </label>
+        <br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+  <br />
+  <br />
+  <br />
+</html>

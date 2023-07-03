@@ -1,0 +1,23 @@
+.headingContainer {
+  background-color: blue;
+  width: fit-content;
+}
+
+.formContainer {
+  height: max-content;
+  width: 350px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: black;
+  background-color: antiquewhite;
+  position: absolute;
+  text-align: center;
+  margin-left: 500px;
+}
+
+.imageContainer {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
